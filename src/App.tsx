@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Shield } from 'lucide-react';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,8 +9,7 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col">
         {/* Header - Reduced padding */}
         <header className="bg-[#2B4B8C] text-white py-2 sm:py-3 sticky top-0 z-10">
           <div className="max-w-3xl mx-auto px-3 sm:px-4 flex items-center justify-between">
@@ -40,7 +39,6 @@ function App() {
         {/* Footer */}
         <Footer />
       </div>
-    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { Plugin } from 'vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { Plugin } from 'vite';
 
 // Custom plugin to inject Facebook Pixel code
 const injectFacebookPixel = (): Plugin => {
@@ -36,5 +36,8 @@ const injectFacebookPixel = (): Plugin => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), injectFacebookPixel()],
-  base: '/felander1/',
-})
+  base: '/felander4/',
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
+});
