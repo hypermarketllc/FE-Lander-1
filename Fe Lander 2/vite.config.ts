@@ -2,10 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { Plugin } from 'vite';
 
-// Custom plugin to inject Facebook Pixel code
-const injectFacebookPixel = (): Plugin => {
+// Custom plugin to inject Facebook Pixel code and Ringba script
+const injectScripts = (): Plugin => {
   return {
-    name: 'inject-facebook-pixel',
+    name: 'inject-scripts',
     transformIndexHtml(html) {
       // Facebook Pixel code to inject
       const pixelCode = `
@@ -27,15 +27,18 @@ const injectFacebookPixel = (): Plugin => {
     /></noscript>
     <!-- End Meta Pixel Code -->`;
 
-      // Insert the pixel code after the opening head tag
-      return html.replace('<head>', '<head>' + pixelCode);
+      // Ringba script
+      const ringbaScript = `<script src="//b-js.ringba.com/CA036b4b35257140c3ba3093c5d7bbe82f" async type="application/javascript"></script>`;
+
+      // Insert the pixel code and Ringba script after the opening head tag
+      return html.replace('<head>', '<head>' + pixelCode + ringbaScript);
     }
   }
 }
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), injectFacebookPixel()],
+  plugins: [react(), injectScripts()],
   base: '/felander2/',
   optimizeDeps: {
     exclude: ['lucide-react'],

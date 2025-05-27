@@ -12,7 +12,7 @@ function FinalPage() {
           </p>
           <a
             href="tel:1-800-555-0123"
-            className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-8 rounded-lg text-xl transition-colors w-full"
+            className="ringba-number inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-8 rounded-lg text-xl transition-colors w-full"
           >
             <Phone className="mr-3 h-6 w-6" />
             Call Now: 1-800-555-0123

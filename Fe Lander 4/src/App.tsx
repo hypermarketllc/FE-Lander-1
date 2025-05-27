@@ -25,7 +25,7 @@ function HomePage() {
               <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg text-base font-semibold transition-colors">
                 Get Your Free Quote
               </button>
-              <a href="tel:8881234567" className="flex items-center justify-center bg-white text-gray-800 px-6 py-3 rounded-lg text-base font-semibold hover:bg-gray-100 transition-colors">
+              <a href="tel:8881234567" className="ringba-number flex items-center justify-center bg-white text-gray-800 px-6 py-3 rounded-lg text-base font-semibold hover:bg-gray-100 transition-colors">
                 <Phone className="w-5 h-5 mr-2" />
                 (888) 123-4567
               </a>

@@ -258,7 +258,7 @@ function QualifiedScreen() {
 
       <a
         href="tel:+1234567890"
-        className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-[#003087] text-white rounded-lg font-semibold text-base sm:text-lg flex items-center justify-center hover:bg-blue-900 transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="ringba-number w-full px-6 sm:px-8 py-3 sm:py-4 bg-[#003087] text-white rounded-lg font-semibold text-base sm:text-lg flex items-center justify-center hover:bg-blue-900 transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
       >
         Get Connected To An Agent <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
       </a>
